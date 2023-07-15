@@ -1,0 +1,26 @@
+h1{
+    margin:0px;
+    text-align: center;
+    size:100px;
+    padding-top: 20px ;
+    padding-bottom: 10px;    
+}
+
+@media screen and (min-width:1000px)  {
+    h1{
+        margin-top:20px;
+        font-size:40px;   
+    }
+}
+@media screen and (min-width:781px) and (max-width: 1000px) {
+    h1{
+        margin-top:20px;
+        font-size:40px;   
+    }
+}
+@media screen and (min-width:1001px) {
+    h1{
+        margin-top:20px;
+        font-size:40px;   
+    }
+}

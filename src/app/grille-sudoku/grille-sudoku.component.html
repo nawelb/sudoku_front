@@ -1,0 +1,16 @@
+<div class="body-grille">
+    <div class="buttons">
+        <input class="btn" type="button" value="new game" (click)="createNewGame()">
+        <input class="btn" type="button" value="verify" (click)="makeVerification()">
+        <input class="btn" type="button" value="solve" (click)="getSolution()">
+    </div>
+    <div class="container" id="grille-container" >
+        <div class="case-value" *ngFor="let case of casesGrille" >
+            <div *ngIf="case.initialyGiven === true" class="case backgroung-given">{{case.value}} </div>
+            <input type="text" class="case case-input" *ngIf="case.initialyGiven !== true" >
+
+        </div>
+        
+        
+    </div>
+</div>
