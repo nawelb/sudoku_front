@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Grille } from '../models/Grille';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
 
-  private baseUrl: string = "http://localhost:7000";
+  private baseUrl: string = environment.baseUrl;
   private urlNewGame: string ="/newgame"
   private urlSolution: string = "/solution";
   private urlVerification : string ="/verification";
