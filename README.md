@@ -21,7 +21,7 @@ $ cd sudoku_front
 ```
 Import the project in your favorite IDE.
 
-Add environnement variables in those 2 environmnent files : 
+Add environnement variable in this environmnent file : 
 
 - environments > environment.ts :
     - `baseUrl` : as as url of your Spring Sudoku_Back microservice running locally [cf Sudoku_Back] (ex : "http://localhost:7000/")
