@@ -1,27 +1,44 @@
 # Sudoku
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project is composed of two repositories. 
 
-## Development server
+This repository is front part, developed using Angular 9.
+The back part was developed using spring boot [cf git repository]. 
+There is no database in this project.
+[Dosuku API] was used to create new games. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The player creates a new game, can verify his grid during his game, and get his grid's solution. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
 
-## Build
+Sudoku_Front requires Angular 9
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+```sh
+$ git clone https://github.com/nawelb/sudoku_front.git
+$ cd sudoku_front
+```
+Import the project in your favorite IDE.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Add environnement variables in those 2 environmnent files : 
 
-## Running end-to-end tests
+- environments > environment.ts :
+    - `baseUrl` : as as url of your Spring Sudoku_Back microservice running locally [cf Sudoku_Back] (ex : "http://localhost:7000/")
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Run
+In the root directory, for a dev server, run: 
+```sh
+$ ng serve -o
+```
+Finaly, Navigate to `http://localhost:4200/`, The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+
+[cf Sudoku_Back]:<https://github.com/nawelb/sudoku_back>
+[Dosuku API]:<https://sudoku-api.vercel.app/>
+[cf git repository]:<https://github.com/nawelb/sudoku_back>
